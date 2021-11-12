@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const { TOKEN, PREFIX } = require('./config');
 const client = new Discord.Client();
 const { Client, MessageEmbed, Intents } = require('discord.js');
+app.set('port', (process.env.PORT || 5000));
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
